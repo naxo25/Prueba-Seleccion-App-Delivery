@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Prueba desarrollo Holanda</title>
+	<style>
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#turnosUsuario, #usuarios {
+			color: green; display: block; font-weight: bold
+		}
+		#turnosUsuario {
+			list-style: none; color: blue
+		}
+		#turnosUsuario li, #usuarios li {
+			padding: 5px
+		}
+		li {
+			padding: 25px;
+		}
+		button{
+			margin-left: 10px;
+			padding: 15px;
+			border-radius: 20%
+		}
+	</style>
+</head>
+<body>
+
+	<center>
+
+		<h3> Prueba Holanda </h3>
+		<h4> Toma de turnos de motociclistas </h4>
+		<br>
+		<img src="loader.gif" width="140" height="140">
+		<br>
+
+		<form id='formIniciar'>
+
+			<h4>Registrate o ingresa con tu nombre de usuario:</h4>
+			Nombre: <input type="text" id='nombre' autofocus><br><br>
+			<button style="padding: 5px; background: white"> Ingresar </button>
+			<br><br>
+
+		</form>
+
+		<div id='info'>
+			<h3 id='msjBienvenido'></h3>
+			<p id='nombreUsuario'></p>
+			<h4>Disponibilidad motociclistas por cada 30 mnts</h4>
+			<h5>El usuario puede hacer un click para tomar un turno y restar 1 motociclista, al hacer otro click se cancela el pedido y lo suma nuevamente.</h5>
+			<ul id='turnos' style="list-style: none;">
+			</ul>
+		</div>
+
+	</center>
+
+	<div style="display: flex;">
+
+		<div style="width: 50%">
+			<h4>Usuarios Activos</h4>
+			<ul id='usuarios'></ul>
+		</div>
+
+		<div style="width: 50%">
+			<h4>Mis turnos</h4>
+			<ul id='turnosUsuario'></ul>
+		</div>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.4.0/socket.io.js"></script>
+	<script src='miJs.js'></script>
+</body>
+</html>
