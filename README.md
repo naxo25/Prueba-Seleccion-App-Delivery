@@ -1,11 +1,11 @@
-# Prueba_Desarrollo_Holanda
+# Prueba Empresa Holandesa Delivery
 
-Prueba de empresa de Holanda de toma de turnos de motocicletas en tiempo real con javaScript y nodeJs.
+Aplicación para que los usuarios tomen los turnos de los repartidores en tiempo real con javaScript y nodeJs.
 
-La aplicación despliega cajas (los botones verdes) que representan 8 motociclistas que la empresa tiene en turnos cada 30 minutos. 
-El usuario puede hacer un click para tomar un turno y restar 1 motociclista, al hacer otro click se cancela el pedido y lo suma nuevamente.
+La aplicación despliega botones que representan 8 repartidores que la empresa tiene en turnos de 30 minutos.
+El usuario puede hacer un click en un botón para tomar un turno y restar 1 repartidor, al hacer otro click se cancela el pedido y lo suma nuevamente.
 
-Ingrese con un usuario existente o registrese solo con un nombre.
+***Para ingresar logeate con un usuario existente o registrate solo poniendo un nombre. Para cerrar la sesión solo relogea.***
 
 ### Pre-requisitos 📋
 
